@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+}
+
+nav {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  z-index: 1;
+}
+
+.nav-main-color {
+  background-color: greenyellow;
+}
+
+.nav-alternate-color {
+  background-color: aquamarine;
+}
+
+section {
+  height: 100vh;
+  background-color: palevioletred;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+
+  animation: fadeIn ease-in-out 0.5s;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: white;
+  font-family: Verdana, Helvetica;
+  letter-spacing: 1.25px;
+  text-shadow: 3px 5px gray;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-800px);
+  }
+  50% {
+    color: red;
+  }
+}
